@@ -1,0 +1,18 @@
+cmd - return : open -a "Terminal"
+
+# Bento Mode aktivieren (Tiling Mode)
+ctrl + cmd - b : yabai --start-service
+ctrl + cmd - v : yabai --stop-service
+
+# Durch Fenster in einer fixen Reihenfolge skippen (zyklisch)
+ctrl + cmd - tab : yabai -m window --focus next
+ctrl + cmd + shift - tab : yabai -m window --focus prev
+ctrl + cmd - r : yabai -m space --rotate 90
+
+# Fenster tauschen (Swap-Positionen von Fenstern) mit Pfeiltasten
+ctrl + cmd - left  : yabai -m window --swap west
+ctrl + cmd - right : yabai -m window --swap east
+ctrl + cmd - up    : yabai -m window --swap north
+ctrl + cmd - down  : yabai -m window --swap south
+
+ctrl + cmd - n : yabai -m space --balance
