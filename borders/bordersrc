@@ -1,0 +1,14 @@
+#!/bin/bash
+
+options=(
+	style=round
+	width=8.0 # Standard: 10.0
+	hidpi=off
+	inactive_color=0xFFF2D5CF
+	active_color=0xffca9ee6
+	# Old Setup Magenta White
+	# active_color=0xffca9ee6
+	# inactive_color=0xFFF2D5CF
+)
+
+borders "${options[@]}"
