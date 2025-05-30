@@ -15,9 +15,11 @@ if $TERM_PROGRAM !=# "Apple_Terminal"
 	set termguicolors
 	syntax on
 	colorscheme catppuccin_frappe
+	
+	highlight Comment guifg=#a6adc8 ctermfg=248
 
 	highlight Normal guibg=NONE ctermbg=NONE
-	highlight LineNr guifg=#7f849c guibg=NONE
+	highlight LineNr guifg=#a6adc8 guibg=NONE
 
 	set cursorline
 	highlight CursorLineNr guifg=#e5c890 gui=bold
