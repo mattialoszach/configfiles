@@ -6,9 +6,6 @@ options=(
 	hidpi=off
 	inactive_color=0xFFF2D5CF
 	active_color=0xffca9ee6
-	# Old Setup Magenta White
-	# active_color=0xffca9ee6
-	# inactive_color=0xFFF2D5CF
 )
 
 borders "${options[@]}"
