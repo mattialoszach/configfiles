@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# Yabai mit sudo-Rechten starten (falls nötig)
+# Start yabai with sudo (if necessary)
 sudo yabai --start-service
 
-# Setze das Layout auf "bsp" (Binary Space Partitioning für deinen Bento Mode)
+# Setze das Layout auf "bsp" (Binary Space Partitioning for Bento Mode)
 yabai -m config layout bsp
 
-# Standard-Split Richtung (erste Spalte teilt vertikal, zweite horizontal)
+# Standard-Split Direction (erste Spalte teilt vertikal, zweite horizontal)
 yabai -m config split_ratio 0.5
 
-# Windows automatisch anordnen (von links nach rechts)
+# Rearrange windows automatically (left to right)
 yabai -m config auto_balance on
 
-# Neue Fenster automatisch im Tiling Mode hinzufügen
+# Add new windows (in tiling mode)
 yabai -m config window_placement first_child
 
-# Spiegeln (horizontal & vertikal)
+# Mirror (horizontal & vertikal)
 yabai -m config window_gap 18
 yabai -m config top_padding 14
 yabai -m config bottom_padding 14
