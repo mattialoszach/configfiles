@@ -1,5 +1,5 @@
-# Current Setup (MacOS Sequoia)
-Every now and then I come back to ricing my MacOS. These are my current configurations (May 2025) customized to my personal preferences and needs.
+# Current Setup for MacOS Sequoia (June 2025)
+Every now and then I come back to ricing my MacOS. These are my current configurations (June 2025) customized to my personal preferences and needs.
 
 - **Terminal:** [iTerm2](https://github.com/gnachman/iTerm2?tab=readme-ov-file)
 - **Window Manager:** [Yabai](https://github.com/koekeishiya/yabai) & [Rectangle](https://github.com/rxhanson/Rectangle)
