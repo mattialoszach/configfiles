@@ -1,4 +1,4 @@
-cmd - return : open -a "Terminal"
+cmd - return : open -a "iTerm"
 
 # Activate / Deactivate Bento Mode (Tiling Mode)
 ctrl + cmd - b : yabai --start-service
