@@ -1,8 +1,11 @@
 " ---Basis---
 set number
 set shortmess+=I
+set splitbelow splitright
+set clipboard=unnamed
+set scrolloff=4
 
-" ---Theme & Plugin (only for non Apple Standard Terminal)---
+"  ---Theme & Plugin (only for non Apple Standard Terminal)---
 if $TERM_PROGRAM !=# "Apple_Terminal"
 	syntax on
 	set autoindent
@@ -14,7 +17,7 @@ if $TERM_PROGRAM !=# "Apple_Terminal"
 
 	call plug#end()
 
-	" Theme aktivieren
+	" Activate Theme
 	set termguicolors
 	syntax on
 	colorscheme catppuccin_frappe
@@ -27,15 +30,29 @@ if $TERM_PROGRAM !=# "Apple_Terminal"
 	set cursorline
 	highlight CursorLineNr guifg=#e5c890 gui=bold
 	highlight CursorLine guibg=NONE ctermbg=NONE
+	
+	highlight ModeMsg      guifg=#8caaee  guibg=#2e3340 gui=bold
+	highlight MsgArea      guifg=#c6d0f5 guibg=#343a48
+	highlight MsgSeparator                 guibg=#343a48
+
+	" Statusline
+	set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+	set laststatus=2
+	set termguicolors
+	
+	highlight StatusLine guifg=#e5c890 gui=bold
+	highlight StatusLineNC    guifg=#a6adc8 guibg=#292c3c gui=NONE
+
+	highlight WinSeparator    guifg=#414559 guibg=#303446
+	highlight VertSplit       guifg=#414559 guibg=#292c3c
+	set fillchars+=vert:\│
 
 	" Autopairs Plugin
 	Plug 'jiangmiao/auto-pairs'
-	call plug#end()
+	call plug#end()	
 endif
 
 " ---Custom ASCII Splashscreen---
-set shortmess+=I
-
 autocmd VimEnter * if argc() == 0 | call MySplash() | endif
 
 function! MySplash()
@@ -45,6 +62,20 @@ function! MySplash()
 
   " Custom Logo
   let l:logo = [
+      \ '                  .@@@@@@@@@@@@@@@@@@@@+                    ',
+      \ '                   .@@@@@.          .@@@                    ',
+      \ '                     +@@@@#           .@                    ',
+      \ '                      .@@@@@.          @.                   ',
+      \ '                        .@@@@@.                             ',
+      \ '                          .@@@@@                            ',
+      \ '                            @@@                             ',
+      \ '                           @@.                              ',
+      \ '                         .@@            @.                  ',
+      \ '                       .@@.            @@                   ',
+      \ '                      @@@@@@@@@@@@@@@@@@@                   ',
+      \ '                    .@@@@@@@@@@@@@@@@@@@.                   ',
+      \ '                                                            ',
+      \ '                                                            ',
       \ '██╗   ██╗██╗███╗   ███╗ █████╗ ████████╗████████╗██╗ █████╗ ',
       \ '██║   ██║██║████╗ ████║██╔══██╗╚══██╔══╝╚══██╔══╝██║██╔══██╗',
       \ '██║   ██║██║██╔████╔██║███████║   ██║      ██║   ██║███████║',
